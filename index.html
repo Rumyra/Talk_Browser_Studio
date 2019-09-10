@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Ruth's talk about how great the browser is for creativity">
+	<title>Your Browser Is Your Studio</title>
+
+	<link rel="stylesheet" type="text/css" href="reveal.js-3.8.0/css/reveal.css">
+	<link rel="stylesheet" href="reveal.js-3.8.0/css/theme/rumyra.css" id="theme">
+	<link rel="stylesheet" href="reveal.js-3.8.0/lib/css/zenburn.css">
+
+	<!-- demo styling -->
+	<style type="text/css">
+		#svgs, svg, #canvas {width: 100vw; height: 100vh;}
+		#svgs, #canvas {display: none; position: absolute; top: 0px; left: 0px;}
+		canvas {width: 100%; height: 100%; box-sizing: border-box;}
+	</style>
+
+</head>
+<body>
+
+	<!-- TALK +++++++++++++++++++++++++++++++++ -->
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h1>Your Browser Is A Studio</h1>
+			</section>
+
+			<section>
+				<h1>Hello</h1>
+				<h2>I'm Ruth</h2>
+				<h2>@rumyra</h2>
+
+				<aside class="notes">
+					<p>Hi, I'm Ruth, it's lovely to be here</p>
+					<p>This is the part of the talk where I tell you all those amazing credentials & why I get to stand here & talk to you</p>
+					<p>So among many other things I'm a teacher. I teach on a course in my local city where we train adults how to code & get them into internships in companies</p>
+					<p>I actually wrote this talk for my students, because I teach them HTML & CSS, right at the beginning of the course and then I see them weeks later (it's a 3 month course) & by that time they've figures out some of the other things I do</p>
+					<p>Like write documentation for MDN docs - last year I did the web audio docs - including this sequencer</p>
+				</aside>
+			</section>
+
+			<section data-background-video="media/step.mp4" data-background-video-loop="true">
+				<aside class="notes">
+				</aside>
+			</section>
+
+			<section data-background-video="media/pan.mp4" data-background-video-loop="true">
+				<aside class="notes">
+					<p>And this crazy 3D boombox</p>
+				</aside>
+			</section>
+
+			<section data-background-video="media/vj.mp4" data-background-video-loop="true">
+				<aside class="notes">
+					<p>Build this audio visualisation app with Samsung Internet team, for their S8 phone. That's a PWA btw</p>
+				</aside>
+			</section>
+
+			<section data-background="media/jsconf.png">
+				<aside class="notes">
+					<p>Or play gigs with my collective Live JS. We opened JS Conf EU this year. That's a javascript powered stage right there</p>
+				</aside>
+			</section>
+
+			<section>
+				<h1>Can I do this?</h1>
+				<h2 class="fragment fade-in">What is this?</h2>
+				<aside class="notes">
+					<p>So my students big question is: Can I do this? they soon follow that with What _is_ this? So students, this talk is for you</p>
+				</aside>
+			</section>
+
+			<section>
+				<h2>Creative Coding</h2>
+				<blockquote><q>...is a type of computer programming in which the goal is to create something expressive instead of something functional</q><cite>https://en.wikipedia.org/wiki/Creative_coding</cite></blockquote>
+				<aside class="notes">
+					<p>And so comes the conversation about creative coding</p>
+					<p>So that's a nice sound byte. We want to create something expressive rather than functional.</p>
+					<p>This will suit you my student well, as you don't have to worry about a big cumbersome app, you can just build for you, using what you want.</p>
+					<p>Let's dig a little deeper, as this is ambigious and doesn't give us much insight into what's out there.</p>
+				</aside>
+			</section>
+
+			<section class="tags">
+				<div class="lots">
+					<div class="tag hardware">
+						<p>Hardware</p>
+						<h5>Wearables</h5>
+					</div>
+					<div class="tag hardware">
+						<p>Hardware</p>
+						<h5>Robotics</h5>
+					</div>
+					<div class="tag hardware">
+						<p>Hardware</p>
+						<h5>Controller Boards</h5>
+					</div>
+					<div class="tag hardware">
+						<p>Hardware</p>
+						<h5>Sensors</h5>
+					</div>
+					<div class="tag hardware">
+						<p>Hardware</p>
+						<h5>Plotters</h5>
+					</div>
+					<div class="tag hardware">
+						<p>Hardware</p>
+						<h5>Lasers</h5>
+					</div>
+					<div class="tag hardware">
+						<p>Hardware</p>
+						<h5>Textile machines</h5>
+					</div>
+					<div class="tag hardware">
+						<p>Hardware</p>
+						<h5>Laser Cutters</h5>
+					</div>
+					<div class="tag hardware">
+						<p>Hardware</p>
+						<h5>3D Printing</h5>
+					</div>
+					<div class="tag hardware">
+						<p>Hardware</p>
+						<h5>Lighting</h5>
+					</div>
+
+					<div class="tag artifact">
+						<p>Artifact</p>
+						<h5>Audio Vis</h5>
+					</div>
+					<div class="tag artifact">
+						<p>Artifact</p>
+						<h5>Data Vis</h5>
+					</div>
+					<div class="tag artifact">
+						<p>Artifact</p>
+						<h5>Games</h5>
+					</div>
+					<div class="tag artifact">
+						<p>Artifact</p>
+						<h5>VR/AR/XR/3D</h5>
+					</div>
+					<div class="tag artifact">
+						<p>Artifact</p>
+						<h5>Music</h5>
+					</div>
+					<div class="tag artifact">
+						<p>Artifact</p>
+						<h5>Installations</h5>
+					</div>
+					<div class="tag artifact">
+						<p>Artifact</p>
+						<h5>Projections</h5>
+					</div>
+					<div class="tag artifact">
+						<p>Artifact</p>
+						<h5>Animation</h5>
+					</div>
+					<div class="tag artifact">
+						<p>Artifact</p>
+						<h5>Generative Art</h5>
+					</div>
+
+					<div class="tag software">
+						<p>Software</p>
+						<h5>Gibber</h5>
+					</div>
+					<div class="tag software">
+						<p>Software</p>
+						<h5>Orka</h5>
+					</div>
+					<div class="tag software">
+						<p>Software</p>
+						<h5>Sonic Pi</h5>
+					</div>
+					<div class="tag software">
+						<p>Software</p>
+						<h5>Tidal</h5>
+					</div>
+					<div class="tag software">
+						<p>Software</p>
+						<h5>MAX</h5>
+					</div>
+					<div class="tag software">
+						<p>Software</p>
+						<h5>Processing (JAVA)</h5>
+					</div>
+					<div class="tag software">
+						<p>Software</p>
+						<h5>Open Frameworks (c++)</h5>
+					</div>
+					<div class="tag software">
+						<p>Software</p>
+						<h5>Cinder (c++)</h5>
+					</div>
+					<div class="tag software">
+						<p>Software</p>
+						<h5>Shaders (GLSL)</h5>
+					</div>
+				</div>
+				
+				<aside class="notes">
+					<p>So I wrote down some stuff - just some - not all of everything - there's certainly a case for that</p>
+					<p>But this - this is a little bit too much - and I haven't even included javascript libraries, because they would be relevant at this stage.</p>
+				</aside>
+			</section>
+
+			<section>
+				<h1>Where do I begin?</h1>
+				<aside class="notes">
+					<p>OK OK, too deep</p>
+					<p>But Ruth, I mean, where do I begin?</p>
+					<p>Let's back it up, I can see you're feeling slightly overwhelmed. So am I</p>
+					<p>Let's begin with something we know and give ourselves some constraints before we get overwhelmed and quit.</p>
+				</aside>
+			</section>
+
+			<section>
+				<aside class="notes">
+					<p>Let's begin with this. The browser, plain and simple.</p>
+					<p>All my students learnt web based programming on the course we run, so this seems like a good place to start, and there is so much baked in.</p>
+					<p>Because everything I just mentioned uses this.</p>
+				</aside>
+			</section>
+
+			<section data-state="hidesvgs">
+				<h1>How can I do this?</h1>
+				<aside class="notes">
+					<p>Instead of asking what is this, can I do this, we can now ask _how_ can I do this.</p>
+					<p>Let's start with some HTML & CSS, that's what I teach my students, let's start with some svg elements, position them in and animate them with CSS.</p>
+				</aside>
+			</section>
+
+			<section data-state="showsvgs">
+				<aside class="notes">
+					<p>Let's go with some SVGs. Distribute them. And fade them in and out with a CSS animation. This is a great place to start if you're not confident in javascript yet & you just want to try this.</p>
+					<p>And for my students out there, like I do in class, I have created them a codepen, so they can pick through the code.</p>
+					<p>Don't forget all the cool things I taught you students. CSS animations, filters, transforms. Go and google bees and bombs on codepen.</p>
+					<p>Start small and practise</p>
+				</aside>
+			</section>
+
+			<!-- <section data-state="hidesvgs">
+				<h1>CODEPEN</h1>
+				<aside class="notes">
+					<p>And there are amazing examples of this Ana Tudor, Yuan Chan, CSS art.</p>
+					<p>There are limitations to this, it's a performance limitation. The DOM gets heavy very quickly.</p>
+					<p>It's a great way to start & I recommend it. One of the good things about adding javascript into the mix however is it opens up more possiblities</p>
+					<p>Because that's the other thing that you are going to need to begin, you are going to need some inspiration, you are going to need some ideas.</p>
+				</aside>
+			</section> -->
+
+			<section data-state="hidesvgs">
+				<h1>💡</h1>
+				<aside class="notes">
+					<p>Now my students. This is only going to take you so far, because at some point you're going to have an idea</p>
+					<p>Need some ideas for ideas?</p>
+				</aside>
+			</section>
+
+			<section class="lists">
+				<div class="list-right">
+					<h1>Some ideas for ideas</h1>
+					<ul>
+						<li class="fragment fade-in">Inspiration</li>
+						<li class="fragment fade-in">Learn</li>
+						<li class="fragment fade-in">Totally Unrelated</li>
+					</ul>
+				</div>
+				<aside class="notes">
+					<p>I do send my students to codepen, there's a bees and bombs collection</p>
+					<p>Some of them come back to me and want to learn the audio stuff I do</p>
+					<p>Feel like you've learnt and are stuck, watch a documentary, read an article - the more unrelated to web dev the better imo</p>
+					<p>It's a creative process this creative coding business.</p>
+					<p>The exploration of ideas is a big part of that process</p>
+					<p>Sometimes it can go the other way, especially when you start to look around for inspiration, you might start coming up with too many ideas!</p>
+				</aside>
+			</section>
+
+			<section>
+				<h1>Idea Shredder</h1>
+				<aside class="notes">
+					<p>That's ok I had an idea about that.</p>
+					<p>This is the idea shredder. This was an idea, from one of my students. The best meta thing.</p>
+					<p>We realised we had too many ideas, and we just didn't have the time to do all of these ideas. So we came up with idea shredder. This allows you to hone your ideas. You can just get rid of some.</p>
+					<p>Shout out to Rowan Merewood from Google - he built the turning box recently - that was his idea.</p>
+				</aside>
+			</section>
+
+			<section>
+				<h1>Probability</h1>
+				<aside class="notes">
+					<p>I was watching a program about probability the other day. I can't understand why you're single Ruth? I can - I make idea shredders and watch Math programs! Too good...</p>
+					<p>It was really good, it gave a really nice overview on probability concepts. The theory of large numbers, if you toss a coin enough times you'll get a rough balance of heads and tails. Numerical forecasting where loads of weather centers in the world chuck weather balloons in the air at the same time and collect data. P value - if you do an experiment, this is determines the significance of your results</p>
+				</aside>
+			</section>
+
+			<section data-state="hidesvgs">
+				<h1>Wisdom of Crowds</h1>
+				<aside class="notes">
+					<p>But it also talked about the the wisdom of crowds. That is ask enough people and you will average the correct answer.</p>
+					<p>First observed in Plymouth in 1906, where a crowd was asked to estimate the weight of an ox, although all the individual guesses where wrong, the average of those guesses was 1207 lbs, the ox weighed 1198 lbs - within 1% of the correct answer</p>
+					<p>Fun fact, this doesn't just happen with humans. The golden shiner fish is a fish that prefers shade, but is much better at finding it in schools of other golden shiners, than on it's lonesome.</p>
+				</aside>
+			</section>
+
+			<section data-state="showsvgs hideCanvas">
+				<aside class="notes">
+					<p>So hence came my idea - I already had dots - maybe I could get everyone at the conference to guess how many dots and I could see if this were true</p>
+					<p>However these dots were not going to suffice - you can tell me how many dots are on the screen right now.</p>
+					<p>So yes, we're going to need _javascript_ for these dots and yes I'm going to use canvas, it _is_ more performant.</p>
+				</aside>
+			</section>
+
+			<section data-state="hidesvgs showCanvas">
+				<aside class="notes">
+					<p>OK so that's better, we have a load more dots. Here we're using canvas</p>
+				</aside>
+			</section>
+
+			<section data-state="hideCanvas">
+				<pre><code data-trim data-noescape>const canvasEl = document.querySelector('canvas');
+const ctx = canvasEl.getContext('2d');
+
+function drawDot() {
+	ctx.beginPath();
+	ctx.fillStyle = colour;
+	ctx.arc(x, y, 40, 0, FULLCIRCLE);
+	ctx.fill();
+	ctx.closePath();
+}
+				</code></pre>
+				<aside class="notes">
+					<p>We create a canvas element in the dom, grab it with out js and instigate a 2d context. Canvas has an arc function, x y rad etc... so if we create a draw function we can loop over that how ever many times we need to create dots</p>
+					<p>Now I actually created a grid class which outputs coordinates depending on the screen, so I can do a square grid</p>
+				</aside>
+			</section>
+
+			<section data-state="regulargrid">
+				<aside class="notes">
+					<p>Make it tighter</p>
+				</aside>
+			</section>
+
+			<section data-state="tightsquare">
+				<aside class="notes">
+					<p>We can do iso if we want</p>
+				</aside>
+			</section>
+
+			<section data-state="isogrid">
+				<aside class="notes">
+					<p>Or polar</p>
+				</aside>
+			</section>
+
+			<section data-state="polargrid">
+				<aside class="notes">
+					<p> </p>
+				</aside>
+			</section>
+
+			<section data-state="isogrid">
+				<aside class="notes">
+					<p>It just generating x and y coordinates. But let's get our dots moving. We need to add values to our x and y coordinates over time - so in a request animation frame, to do this. </p>
+				</aside>
+			</section>
+
+			<section data-state="move">
+				<aside class="notes">
+					<p>OK that's cool, but it's quite rigid. There's a couple of things here, they don't care about the edge of the screen or each other.</p>
+				</aside>
+			</section>
+
+			<section data-state="edge">
+				<aside class="notes">
+					<p>So what we say here is if the x coordinate becomes less than 0 or grater than the screen width reverse it (negate it) and the same for the y, but height.</p>
+				</aside>
+			</section>
+
+			<section data-state="collide">
+				<p>http://bit.ly/halfstackdot</p>
+				<aside class="notes">
+					<p>To get them to see each other is a little more involved, well a _lot_ more involved. These balls are the same mass, so we figure out the distance they are apart, minus both radius, and when that's nothing, reverse the x coordinate.</p>
+					<p>OK so this is all well and good - but now it's all set up, we can actually curate it a little.</p>
+					<p>I can see - you're all chomping on the bit aren't you - But Ruth</p>
+				</aside>
+			</section>
+
+			<section data-state="hideCanvas">
+				<h1>HOW MANY ARE THERE?</h1>
+				<aside class="notes">
+					<p></p>
+				</aside>
+			</section>
+
+			<section data-state="collide">
+				<aside class="notes">
+					<p></p>
+				</aside>
+			</section>
+
+			<section data-state="collide">
+				<h1>Total: 64</h1>
+				<h2 class="fragment fade-in">Average: 58.59</h2>
+				<h2 class="fragment fade-in">Min: 23</h2>
+				<h2 class="fragment fade-in">Max: 255</h2>
+				<aside class="notes">
+					<p>I had one 64 - a couple of 63's a 67</p>
+					<p>Now the thing is, I had a hidden agenda. I wasn't actually looking to do this experiment - although it was interesting. I was far more interested in random numbers, because they appear a lot when you start down this creative coding path. You may not notice it, but the speed, actually the velocity, of each of these balls is random. But we only get to set it in js</p>
+				</aside>
+			</section>
+
+			<section data-state="hideCanvas">
+				<h2><code>Math.random()</code></h2>
+				<aside class="notes">
+					<p>It's not that great. Not because it's not random - it's fine for that. No, it's the distribution of random that I'm concerned with. Let me illustrate this better visually with the size of the balls - let's set them with Math.random</p>
+				</aside>
+			</section>
+
+			<section data-state="randsize">
+				<aside class="notes">
+					<p>Here the balls radius are set with a random size - yeh alright, it's not too bad, it actually look alright with balls. But if you can imagine any other shape, that's quite a variation. Plus you get over time the same amount of 0.1 0.5 0.9, visually its actually nicer to get 0.4 0.5 most of the time</p>
+					<p>Let's use your numbers</p>
+				</aside>
+			</section>
+
+			<section data-state="numsize">
+				<aside class="notes">
+					<p>Welp - let's not stop there, let's use them for the colours too</p>
+				</aside>
+			</section>
+
+			<section data-state="colour">
+				<aside class="notes">
+					<p></p>
+				</aside>
+			</section>
+
+			<section>
+				<aside class="notes">
+					<p>Now we're into a stage of curating our content - exploration - together, which is interesting. We've all played a part in this. Our simple dots on a screen.</p>
+					<p>Which one looks better, was it actually the original? Does it matter? Is the point of this the dots, is it something else? Could we take the random number exploration elsewhere.</p>
+				</aside>
+			</section>
+
+			<section data-state="hideCanvas">
+				<aside class="notes">
+					<p>WHen I was building this demo, I didn't just give a shape coordinates, I built a vector class and then an entity class. It's pretty easy to add a force like gravity at this point - you add another position to the movement. Like hey can you also go down a bit pls, k thanks</p>
+				</aside>
+			</section>
+
+			<section data-state="gravity">
+				<aside class="notes">
+					<p>It needs some work, but I'm OK with this</p>
+					<p>Also damn am I bored of dots - but that's just a draw function, we can replace that.</p>
+				</aside>
+			</section>
+
+			<section data-state="showcards">
+				<aside class="notes">
+					<p>Everyone here knows about porting SVGs onto canvas right.</p>
+					<p>Oh you are gonna love this:</p>
+				</aside>
+			</section>
+
+			<section data-state="hideCanvas">
+				<pre><code data-trim data-noescape>function drawCard() {
+	const card = new Path2D( ...path data here... )
+	ctx.fillStyle = colour;
+	ctx.fill(card);
+}
+				</code></pre>
+				<aside class="notes">
+					<p>The canvas has a path2d constructor. Which you can use to _save_ a path to fill or stroke later. So you can use normal canvas 2d methods, or you can dump in an svg path attribute into this bad boy.</p>
+				</aside>
+			</section>
+
+			<section data-state="fourcards">
+				<aside class="notes">
+					<p>Cool - oh wait wait - trails</p>
+				</aside>
+			</section>
+
+			<section data-state="trails">
+				<aside class="notes">
+					<p>Yup</p>
+					<p>I mean, where are we now. Am I satisfied with our weird psycodelic game of solitaire, or not? What's next? Does anything need to be or am I ok with what I've done. In this realm things do not need to be releasable</p>
+				</aside>
+			</section>
+
+			<section data-state="hideCanvas">
+				<h2>Creative Coding</h2>
+				<blockquote><q>...is a type of computer programming in which the goal is to create something expressive instead of something functional</q><cite>https://en.wikipedia.org/wiki/Creative_coding</cite></blockquote>
+				<aside class="notes">
+					<p>Am I creating something now. Or am I creating something to create something.</p>
+					<p>I spoke with Yotam Mann a couple of weeks back. He wrote tone.js which is a library which sits on top of the web audio api - you heard it being used on the idea shredder - I'd go as far to say 90% of the web audio demos you see harness tone.</p>
+					<p>I kinda knew the answer, but I asked him anyway -> Why did you build tone? It's a big library, sure it has a small community around it, but it really is mostly just him, there's no profit in this</p>
+					<p>He had built a couple of things, a game and a generative demo, and he found himself coming across the same problems again and again. One that was easier solved by building the library.</p>
+				</aside>
+			</section>
+
+			<section>
+				<div class="lots">
+					<div class="tag">
+						<p>Audio</p>
+						<h5>tone.js</h5>
+					</div>
+					<div class="tag">
+						<p>Data Vis</p>
+						<h5>d3.js</h5>
+					</div>
+					<!-- <div class="tag">
+						<p>Games</p>
+						<h5>phaser.js</h5>
+					</div> -->
+					<div class="tag">
+						<p>Web GL</p>
+						<h5>three.js</h5>
+					</div>
+					<div class="tag">
+						<p>Art</p>
+						<h5>p5.js</h5>
+					</div>
+					<!-- <div class="tag">
+						<p>Hardware</p>
+						<h5>johnny5.js</h5>
+					</div> -->
+				</div>
+				<aside class="notes">
+					<p>What's interesting is if you take a look at what was not on the board before: js libraries to help with the artifacts</p>
+					<p>Audio - created by Yotam Mann so he could do audio betterer - open source</p>
+					<p>Lauren McCarthy with p5.js</p>
+					<p>Data Vis - created by Mike Bostock so he could do data vis betterer</p>
+					<p>Web GL - three.js created by mr.doob so he could 3D betterer</p>
+					<p>p5</p>
+				</aside>
+			</section>
+
+			<section data-state="hideCanvas">
+				<h2>Creative Coding</h2>
+				<blockquote><q>...is a type of computer programming in which the goal is to create something expressive instead of something functional</q><cite>https://en.wikipedia.org/wiki/Creative_coding</cite></blockquote>
+				<aside class="notes">
+					<p>Expressive not functional?</p>
+					<p>I don't think it's that simple - forever artists have created their tools. Leonardo Di Vinci hand carved his own quills just how he liked them</p>
+				</aside>
+			</section>
+
+			<section data-state="browser">
+				<aside class="notes">
+					<p>And then we come back to the browser, because all those libraries were built on top of an environment that already exists.</p>
+				</aside>
+			</section>
+
+			<!-- <section data-state="hideCanvas">
+				<h1>Digital Art</h1>
+				<aside class="notes">
+					<p>Digital art has been around for a long time - the first exhibitions primarily focussed on computer art were around 1968: </p>
+					<p>But the accessibility of it is really only just now flaring up. Expressionist painters really came about when paints were put in a tube and became far more portable. This is now in creative coding.</p>
+					<p>Like this laptop, and this browser and these libraries</p>
+				</aside>
+			</section> -->
+
+			<section>
+				<h1>To Code or not</h1>
+				<aside class="notes">
+					<p>And is the creativity in the final piece or the code itself. Was it the process we just went through, or will it be something I end up producing? Computation is above the level of code, if I had you all write down how many dots and work out an average is it still creative coding? What was the creative intent? If I took away all the code, as long as the illusion is there should we use code for the sake of using code?</p>
+					<p>OK Students! Don't worry, this is just food for thought, you are stil learning to draw, and the only way to get better at that is to practise, so go create a thing. Whether that's code or a thing.</p>
+				</aside>
+			</section>
+
+			<section>
+				<blockquote><q>Is the creativity the code or the artifact?</q></blockquote>
+				<aside class="notes">
+					<p>Because to answer is the code the creativity ot the artifact.</p>
+					<p>Spoiler alert - it's probably both</p>
+				</aside>
+			</section>
+			
+			<section>
+				<h1>Thank You</h1>
+				<h2>Ruth John</h2>
+				<h2>@rumyra</h2>
+				<aside class="notes">
+					<p>And y'all thought this was about audio huh :D</p>
+					<p>Thanks for having me New York. I'll see you at the next one.</p>
+				</aside>
+			</section>
+		</div><!--slides-->
+
+		<!-- <section>
+				
+			I mean I'm in this rabiit hole now. What if I used the web audio api to create random numbers, and passed them through a filter.
+
+			XML poetry
+			Ascii art
+			Artificial life - MIT
+			Nerol networks in slime moulds
+			AI glass - inside light is encoding the neural network.
+
+			Computation is above the level of code.
+
+			On Kawara
+
+			Start small
+
+			No commercial gain. Art.
+
+			Back to creative intent. As long as the illusion is there - should we use code for the sake of using code.
+
+			AS an artist my material is code, transparency of tech and personification of robots. How do we make it feel more alive. Visible, code is the glue. Tool is code.
+
+			Accidents happen and they are better.
+
+			Typography exhibition in New York displayed code.
+
+			Is the code the art or the final piece. Is it the process or the final piece. Yes it's both.
+
+			Pen plotters with blowing ink.
+			Straw rather than pen, connected to compressor, and blowing ink. Slow down dry speed.
+
+			Aesthetic art. Still young. Digital Art has been around for aaaaggggeeess - but us as coders, that are artists, that's still reletively new. The tools are only just ebcoming accessible.	
+
+			This whole talk is functional.
+			</section> -->
+
+	</div><!--.reveal-->
+
+	<div id="svgs"><svg viewBox="0 0 250 250" xmlns="http://www.w3.org/2000/svg">
+		<circle cx="50" cy="50" r="10" stroke-width="3.0" fill="hsla(33, 55%, 92%, 1)" />
+		<circle cx="100" cy="50" r="10" stroke-width="3.0" fill="hsla(33, 55%, 92%, 1)" />
+		<circle cx="150" cy="50" r="10" stroke-width="3.0" fill="hsla(33, 55%, 92%, 1)" />
+		<circle cx="200" cy="50" r="10" stroke-width="3.0" fill="hsla(33, 55%, 92%, 1)" />
+
+		<circle cx="50" cy="100" r="10" stroke-width="3.0" fill="hsla(33, 55%, 92%, 1)" />
+		<circle cx="100" cy="100" r="10" stroke-width="3.0" fill="hsla(33, 55%, 92%, 1)" />
+		<circle cx="150" cy="100" r="10" stroke-width="3.0" fill="hsla(33, 55%, 92%, 1)" />
+		<circle cx="200" cy="100" r="10" stroke-width="3.0" fill="hsla(33, 55%, 92%, 1)" />
+
+		<circle cx="50" cy="150" r="10" stroke-width="3.0" fill="hsla(33, 55%, 92%, 1)" />
+		<circle cx="100" cy="150" r="10" stroke-width="3.0" fill="hsla(33, 55%, 92%, 1)" />
+		<circle cx="150" cy="150" r="10" stroke-width="3.0" fill="hsla(33, 55%, 92%, 1)" />
+		<circle cx="200" cy="150" r="10" stroke-width="3.0" fill="hsla(33, 55%, 92%, 1)" />
+
+		<circle cx="50" cy="200" r="10" stroke-width="3.0" fill="hsla(33, 55%, 92%, 1)" />
+		<circle cx="100" cy="200" r="10" stroke-width="3.0" fill="hsla(33, 55%, 92%, 1)" />
+		<circle cx="150" cy="200" r="10" stroke-width="3.0" fill="hsla(33, 55%, 92%, 1)" />
+		<circle cx="200" cy="200" r="10" stroke-width="3.0" fill="hsla(33, 55%, 92%, 1)" />
+	</svg></div>
+
+	<div id="canvas"><canvas></canvas></div>
+
+	<!-- TALK ++++++++++++++++++++++++++++++++ -->
+	<script type="module" src="modules/utils.js"></script>
+	<script type="module" src="modules/Vector.js"></script>
+	<script type="module" src="modules/Grid.js"></script>
+	<script type="module" src="modules/Entity.js"></script>
+
+	<script type="text/javascript" src="reveal.js-3.8.0/js/reveal.js"></script>
+	<script type="text/javascript" src="revealInit.js"></script>
+	<script type="module" src="index.js"></script>
+
+	<!-- <script type="text/javascript" src="htmlex.js"></script> -->
+	<script type="text/javascript">
+
+		const svgdiv = document.querySelector('#svgs');
+		const circles = svgdiv.querySelectorAll('circle');
+
+		// show html example
+		Reveal.addEventListener( 'showsvgs', function() {
+
+			circles.forEach((el, i) => {
+				const fill = `hsla(${i*20}, 62%, 66%, 1)`;
+				el.setAttribute('stroke', fill);
+
+				el.animate([
+				  // keyframes
+				  { opacity: '1' }, 
+				  { opacity: '0.3' }
+				], { 
+				  // timing options
+				  duration: Math.floor(Math.random()*1000),
+				  iterations: Infinity
+				});
+			})
+
+			svgdiv.style.display = 'block';
+
+		}, false );
+
+		// hide html example
+		Reveal.addEventListener( 'hidesvgs', function() {
+
+			svgdiv.style.display = 'none';
+		}, false );
+	</script>
+</body>
+</html>
