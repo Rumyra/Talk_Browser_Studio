@@ -1,73 +1,47 @@
 /**
- * Rumyra theme for reveal.js.
- *
- * Copyright (C) 2019 Ruth John
+ * Solarized Dark theme for reveal.js.
+ * Author: Achim Staebler
  */
-/* Classes you can use
-* .alternate on section makes background dark and font light
-* .plain on img = no border
-* .back-img puts outline on text so it shows
-* .
-* .
-*/
-@font-face {
-  font-family: 'Sans';
-  src: url("fonts/HurmeGeometricSans3.otf") format("opentype");
-}
-
-@font-face {
-  font-family: 'Sans';
-  font-style: italic;
-  src: url("fonts/HurmeGeometricSans3Oblique.otf") format("opentype");
-}
-
-@font-face {
-  font-family: 'Sans';
-  font-weight: bold;
-  src: url("fonts/HurmeGeometricSans3SemiBold.otf") format("opentype");
-}
-
-@font-face {
-  font-family: 'Sans';
-  font-style: italic;
-  font-weight: bold;
-  src: url("fonts/HurmeGeometricSans3SemiBoldOblique.otf") format("opentype");
-}
-
-.reveal a {
-  line-height: 1.3em;
+@import url(../../lib/font/league-gothic/league-gothic.css);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+/**
+ * Solarized colors by Ethan Schoonover
+ */
+html * {
+  color-profile: sRGB;
+  rendering-intent: auto;
 }
 
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
 body {
-  background-image: radial-gradient(circle, rgba(253, 253, 252, 0.1), rgba(0, 0, 0, 0.1));
-  background-color: #423e41;
+  background: #002b36;
+  background-color: #002b36;
 }
 
 .reveal {
-  font-family: "Sans", sans-serif;
-  font-size: 36px;
+  font-family: "Lato", sans-serif;
+  font-size: 40px;
   font-weight: normal;
-  color: #fdfdfc;
+  color: #93a1a1;
 }
 
 ::-moz-selection {
-  color: #fdfdfc;
-  background: #dd6984;
+  color: #fff;
+  background: #d33682;
   text-shadow: none;
 }
 
 ::selection {
-  color: #fdfdfc;
-  background: #dd6984;
+  color: #fff;
+  background: #d33682;
   text-shadow: none;
 }
 
 ::-moz-selection {
-  color: #fdfdfc;
-  background: #dd6984;
+  color: #fff;
+  background: #d33682;
   text-shadow: none;
 }
 
@@ -87,11 +61,11 @@ body {
 .reveal h5,
 .reveal h6 {
   margin: 0 0 20px 0;
-  color: #fdfdfc;
-  font-family: "Sans", sans-serif;
-  font-weight: bold;
-  line-height: 1.3;
-  letter-spacing: -0.04em;
+  color: #eee8d5;
+  font-family: "League Gothic", Impact, sans-serif;
+  font-weight: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
   text-transform: uppercase;
   text-shadow: none;
   word-wrap: break-word;
@@ -287,21 +261,21 @@ body {
  * LINKS
  *********************************************/
 .reveal a {
-  color: #6bbdbb;
+  color: #268bd2;
   text-decoration: none;
   -webkit-transition: color .15s ease;
   transition: color .15s ease;
 }
 
 .reveal a:hover {
-  color: #b2dcdc;
+  color: #78b9e6;
   text-shadow: none;
   border: none;
 }
 
 .reveal .roll span:after {
   color: #fff;
-  background: #449796;
+  background: #1a6091;
 }
 
 /*********************************************
@@ -310,7 +284,7 @@ body {
 .reveal section img {
   margin: 15px 0px;
   background: rgba(255, 255, 255, 0.12);
-  border: 4px solid #fdfdfc;
+  border: 4px solid #93a1a1;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
@@ -328,7 +302,7 @@ body {
 
 .reveal a:hover img {
   background: rgba(255, 255, 255, 0.2);
-  border-color: #6bbdbb;
+  border-color: #268bd2;
   -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
           box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
 }
@@ -337,7 +311,7 @@ body {
  * NAVIGATION CONTROLS
  *********************************************/
 .reveal .controls {
-  color: #6bbdbb;
+  color: #268bd2;
 }
 
 /*********************************************
@@ -345,7 +319,7 @@ body {
  *********************************************/
 .reveal .progress {
   background: rgba(0, 0, 0, 0.2);
-  color: #6bbdbb;
+  color: #268bd2;
 }
 
 .reveal .progress span {
@@ -358,157 +332,7 @@ body {
  *********************************************/
 @media print {
   .backgrounds {
-    background-color: #423e41;
+    background-color: #002b36;
   }
 }
-
-.reveal .slides {
-  text-align: right;
-}
-
-.reveal h1 {
-  border-bottom: 2px solid #fdfdfc;
-}
-
-.reveal p {
-  font-size: 2em;
-}
-
-.reveal blockquote {
-  width: 80%;
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.05);
-  border: 3px solid #a782c4;
-}
-
-.reveal blockquote q {
-  display: block;
-  margin-bottom: 20px;
-}
-
-.reveal blockquote cite {
-  display: block;
-  color: #a782c4;
-}
-
-.reveal .slides pre code {
-  padding: 20px;
-  font-size: 24px;
-  line-height: 120%;
-  background-color: rgba(255, 255, 255, 0.05);
-  border: 3px solid #f6ecdf;
-}
-
-.reveal {
-  opacity: 0.95;
-}
-
-.slide-background {
-  background-blend-mode: multiply;
-  -webkit-filter: grayscale(0.2) opacity(0.9);
-          filter: grayscale(0.2) opacity(0.9);
-}
-
-#current-slide {
-  width: 45% !important;
-}
-
-#upcoming-slide {
-  width: 55% !important;
-}
-
-#speaker-controls {
-  width: 55% !important;
-}
-
-.reveal .slides .lists ul {
-  list-style: none;
-  margin-left: 0px;
-}
-
-.reveal .slides .lists div.list-left {
-  float: left;
-  text-align: left;
-}
-
-.reveal .slides .lists div.list-right h1, .reveal .slides .lists div.list-right ul li {
-  text-align: right;
-}
-
-.reveal .slides .lists p.flash {
-  -webkit-animation: flash 1s infinite;
-          animation: flash 1s infinite;
-}
-
-@-webkit-keyframes flash {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes flash {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-.reveal .slides .lots {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  line-height: 1;
-}
-
-.reveal .slides .lots .tag {
-  margin: 10px;
-  padding: 0px 10px;
-  background-color: rgba(255, 255, 255, 0.05);
-  border: 3px solid #84bd8f;
-  border-width: 0px 3px 0px 0px;
-  border-style: dotted;
-}
-
-.reveal .slides .lots .tag p {
-  display: inline-block;
-  margin: 0px;
-  padding: 5px;
-  border-bottom: 1px solid #84bd8f;
-  font-size: 0.4em;
-  color: #84bd8f;
-  text-transform: uppercase;
-}
-
-.reveal .slides .lots .tag h5 {
-  margin: 0px;
-  padding: 5px;
-  font-size: 0.4em;
-}
-
-.reveal .slides .lots .tag.artifact {
-  border-color: #f5c87a;
-}
-
-.reveal .slides .lots .tag.artifact p {
-  color: #f5c87a;
-  border-color: #f5c87a;
-}
-
-.reveal .slides .lots .tag.software {
-  border-color: #6bbdbb;
-}
-
-.reveal .slides .lots .tag.software p {
-  color: #6bbdbb;
-  border-color: #6bbdbb;
-}
-/*# sourceMappingURL=rumyra.css.map */
+/*# sourceMappingURL=moon.css.map */
